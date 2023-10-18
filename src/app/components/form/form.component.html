@@ -1,0 +1,46 @@
+<form class="form-group">
+    <div class="form-icon">
+        <img src="/assets/images/png/icon-hour.png" alt="Clock" />
+        <span>Horário</span>
+    </div>
+    <div class="form-rotation">
+        <h2>Qual período quer treinar?</h2>
+        <section>
+            <p>
+                <input type="radio" name="rotation" value="morning" />
+                <label for="rotation">
+                    Manhã
+                    <span>06:00 às 12:00</span>
+                </label>
+            </p>
+            <p>
+                <input type="radio" name="rotation" value="afternoon" />
+                <label for="rotation">
+                    Tarde
+                    <span>12:01 às 18:00</span>
+                </label>
+            </p>
+            <p>
+                <input type="radio" name="rotation" value="night" />
+                <label for="rotation">
+                    Noite
+                    <span>18:01 às 23:00</span>
+                </label>
+            </p>
+        </section>
+    </div>
+    <div class="form-show-closed-units">
+        <p>
+            <input type="checkbox" name="closed-units" />
+            <label for="closed-units">Exibir unidades fechadas</label>
+        </p>
+        <p>
+            Resultados encontrados:
+            <span>{{ closedUnits }}</span>
+        </p>
+    </div>
+    <div class="form-buttons">
+        <input type="submit" value="encontrar unidade">
+        <input type="button" value="limpar">
+    </div>
+</form>
