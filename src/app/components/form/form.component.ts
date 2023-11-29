@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss']
 })
-export class FormComponent {
-  closedUnits: number = 0;
+export class FormComponent implements OnInit {
+  results = [];
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 }
